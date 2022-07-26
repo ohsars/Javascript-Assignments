@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="Osakpolor Marvelous, Efebe">
+  <title>Switch Statement Assignment</title>
+</head>
+<body>
+
+  <script>
+
+// ASSIGNMENT BEGINS HERE
+// DATA SALES COMMAND USING SWITCH CASES
+
+// first prompt a user sees 
+var buy = prompt(`
+  Hiiiiii,
+  How can we help you??
+
+  1. Airtime Self
+  2. Airtime Others
+  3. Data
+  4. Transfer`)
+
+switch (true) {
+
+// Airtime self purchase
+  case (buy == 1) : {
+    let selfAirtime = prompt(`Enter Amount`);
+    alert(`Your Airtime purchase of $${selfAirtime} is successful`)
+    alert(`Thanks for using this channel`)
+    break; }
+
+//  Airtime for Others
+  case (buy == 2) :
+    othersAmount = prompt(`Enter Amount`);
+    othersNumber = prompt(`Enter Recepient's Phone Number`);
+    password = prompt(`Enter your pin`);
+    alert(`Your recharge of $${othersAmount} on ${othersNumber} is successful`)
+    alert(`Thanks for using this channel`)
+    break;
+
+// General Data 
+  case (buy == 3) : 
+    data = prompt(`
+    1. For self
+    2. Others`)
+
+// Data purchase for self
+    switch (true) {
+      case (data == 1): {
+        selfData = prompt(`Select Data Plans 
+        1. 100Gb
+        2. 50Gb
+        3. 10Gb
+        4. 5Gb`)
+      }
+
+      // Self Data Options 
+        switch (true) {
+          case (selfData == 1):
+            confirm(`Are you sure??`)
+            alert(`Your Data Purchase of 100Gb is Successful`)
+            alert(`Thanks for using this channel`)
+            break;
+          
+          case (selfData == 2):
+            confirm(`Are you sure??`)
+            alert(`Your Data Purchase of 50Gb is Successful.`)
+            alert(`Thanks for using this channel`)
+            break;
+          
+          case (selfData == 3):
+            confirm(`Are you sure`)
+            alert(`Your Data Purchase of 10Gb is Succesful`)
+            alert(`Thanks for using this channel`)
+            break;
+          
+          case (selfData == 4):
+            confirm(`Are you sure`)
+            alert(`Your Data Purchase of 5Gb is Succesful`)
+            alert(`Thanks for using this channel`)
+            break;
+          
+          default:
+            alert(`Wrong Input!!, Try Again Later.`)
+            break;
+        }
+        break;
+    
+
+        // Data Subscription for Others
+      case (data == 2): {
+        othersNumber = prompt(`Enter Recepient's Number`)
+        othersData = prompt(`Select Data Plans 
+        1. 100Gb
+        2. 50Gb
+        3. 10Gb
+        4. 5Gb`)
+      }
+
+        switch (true) {
+            case (othersData == 1):
+              prompt(`Enter Your pin`)
+              confirm(`Are you sure you want to transfer 100Gb to ${othersNumber}??`)
+              alert(`Your Data Purchase of 100Gb on ${othersNumber} is Successful`)
+              alert(`Thanks for using this channel`)
+              break;
+            
+            case (othersData == 2):
+              prompt(`Enter Your pin`)
+              confirm(`Are you sure you want to transfer 50Gb to ${othersNumber}??`)
+              alert(`Your Data Purchase of 50Gb on ${othersNumber} is Successful.`)
+              alert(`Thanks for using this channel`)
+              break;
+            
+            case (othersData == 3):
+              prompt(`Enter Your pin`)
+              confirm(`Are you sure you want to transfer 10Gb to ${othersNumber}??`)
+              alert(`Your Data Purchase of 10Gb on ${othersNumber} is Succesful`)
+              alert(`Thanks for using this channel`)
+              break;
+            
+            case (selfData == 4):
+              prompt(`Enter Your pin`)
+              confirm(`Are you sure you want to transfer 5Gb to ${othersNumber}??`)
+              alert(`Your Data Purchase of 5Gb on ${othersNumber} is Succesful`)
+              alert(`Thanks for using this channel`)
+              break;
+            
+            default:
+              alert(`Wrong Input!!, Try Again Later.`)
+              break;
+
+          }
+
+          break;
+
+        break;
+    }
+    break;
+  
+
+// Transfer (General) 
+  case (buy == 4) :
+    transferNumber = prompt(`Enter Recepient Account Number`)
+    transferName = prompt(`Enter Recepient's Full Name`) /* Since there is no way to verify recepient account number, User will have to input Account Name*/
+    transferBank = prompt(`Enter Bank Name`)      
+    transferAmount = prompt (`How much do you want to send??`)
+
+    alert(`You are sending $${transferAmount} to ${transferName} of ${transferBank}.`)
+
+    password = prompt(`Enter your pin`)
+
+    alert(`$${transferAmount} has been sent to ${transferName}.`)
+    alert(`Thanks for using this channel`)
+    break
+
+// Default --
+  default:
+    alert(`Wrong input!!, Try again`)
+    break;
+}
+
+  </script>
+  
+</body>
+</html>
