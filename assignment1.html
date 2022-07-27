@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javacript Assignments</title>
+</head>
+<body>
+  <script>
+
+    /*Number one Assignment 
+    Briefing
+    printing numbers divisible by 6 as Shams
+    printing numbers divisible by 8 as TIIDELAB
+    printing numbers divisible by 6 and 8 as ShamsTIIDELAB
+
+    */
+
+    // declaring a variable
+    var num
+
+    // creating a loop for the number
+    for (num =1; num <= 200; num++)
+    switch (true) {
+      // if number is divisible by 6 and 8 
+      case (num % 6 == 0 && num % 8 == 0):
+        console.log(`ShamsTIIDELAB`);
+        break;
+
+    // if number is divisible by 6
+      case (num % 6 == 0 ):
+        console.log(`Shams`);
+        break;
+    
+    // if number is divisible by 8
+      case ( num % 8 == 0):
+        console.log(`TIIDELAB`);
+        break;
+    
+    // print other numbers
+      default:
+        console.log(num)
+        break;
+    }
+
+
+  </script>
+</body>
+</html>
