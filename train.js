@@ -1,5 +1,6 @@
 "use strict"
 
+// Creating an Object
 const Person = {
     Name: {
         first: "Favour" ,
@@ -21,10 +22,16 @@ const Person = {
         Continent : "Africa"
     },
     getAddress() {
-        return `${this.Name.first} ${this.Name.middle} ${this.Name.last} stays at ${this.location.streetNumber} ${this.location.street}, ${this.location.nearestBusStop}, ${this.location.lga}, ${this.location.city}, ${this.location.state}, ${this.location.zipCode} ${this.location.country} ${this.location.Continent}`
+        return `${this.Name.first} ${this.Name.middle} ${this.Name.last} stays at ${this.location.streetNumber}, ${this.location.street}, ${this.location.nearestBusStop}, ${this.location.lga}, ${this.location.city}, ${this.location.state}, ${this.location.zipCode}, ${this.location.country}, ${this.location.Continent}`
     }
 }
 
-console.log(Person.getAddress())
+// console.log(Person.getAddress())
 // console.log(Person.Name)
 // console.log(Person.favouriteColour)
+
+
+// Array Methods
+const primeNumbers = [1, 2, 3, 5, 7, 11, 13, 17]
+console.log(primeNumbers.length)
+console.log(primeNumbers.join("||"))
