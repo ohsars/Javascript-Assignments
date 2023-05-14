@@ -46,8 +46,10 @@ const courses = [
 
 // console.log(courses)
 
-courses.push({teacher: "Favour", course: "Father is great"})
+courses.push({teacher: "Favour😀", course: "Father is great"})
 
 console.log(courses, courses.length)
 courses.unshift({teacher: "Martin", course: "Mathematics and stats"})
 console.log(courses, courses.length)
+
+
