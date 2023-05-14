@@ -50,7 +50,7 @@ courses.push({teacher: "Favour😀", course: "Father is great"})
 
 // console.log(courses, courses.length)
 courses.unshift({teacher: "Martin", course: "Mathematics and stats"})
-// console.log(courses, courses.length)
+console.log(courses, courses.length)
 
 
 let eMail = "martin@gmail.com";
