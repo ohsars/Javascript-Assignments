@@ -1,0 +1,81 @@
+/* Resetting the styling */
+* {
+    /* display: block; */
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(254, 247, 237);
+}
+
+/* Header Styles  */
+
+.hero {
+    margin: 1.2em;
+    color: rgb(239, 131, 112);
+}
+
+.hero p {
+    color: rgb(237, 156, 156);
+}
+
+
+/* the Calculator Section */
+.section {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.calculatorDisplay {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-align: right;
+    font-family: monospace;
+    white-space: nowrap;
+}
+
+.calculatorkeys {
+    width: 220px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0;
+}
+
+.calculatorkeys button {
+    height: 45px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.calculatorkeys button:hover {
+    background-color: rgb(42, 39, 39);
+    transition: ease-in 4s;
+}
+
+.item1 {
+    grid-column: 1/3;
+}
+
+.item16 {
+    grid-column: 1/4;
+}
+
+.item3,.item17,.item15,.item7,.item11 {
+    background-color: rgb(221, 180, 180);
+}
+
+.footer {
+    margin-top: 2rem;
+}
+
+.footer p {
+    font-size: 10px;
+}
