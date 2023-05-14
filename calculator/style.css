@@ -6,17 +6,19 @@
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(254, 247, 237);
+    text-decoration: none;
 }
 
 /* Header Styles  */
 
 .hero {
-    margin: 1.2em;
+    margin: 1.1em;
     color: rgb(239, 131, 112);
 }
 
 .hero p {
-    color: rgb(237, 156, 156);
+    color: black;
+    font-size: 10px;
 }
 
 
@@ -28,6 +30,7 @@
 }
 
 .calculatorDisplay {
+    display: block;
     background-color: black;
     color: white;
     margin: 10px;
@@ -53,6 +56,7 @@
     height: 45px;
     border: 1px solid gray;
     cursor: pointer;
+    background-color: rgb(231, 227, 227);
 }
 
 .calculatorkeys button:hover {
@@ -69,13 +73,37 @@
 }
 
 .item3,.item17,.item15,.item7,.item11 {
-    background-color: rgb(221, 180, 180);
+    background-color: rgb(221, 180, 180) !important;
 }
 
 .footer {
-    margin-top: 2rem;
+    margin-top: 1.2rem;
+    font-size: 10px;
+    color: rgb(239, 131, 112);
 }
 
 .footer p {
-    font-size: 10px;
+    color: rgb(239, 131, 112);
+}
+
+hr {
+    /* align-self: center; */
+    /* text-align: center; */
+    /* width: 200px; */
+    margin: 10px;
+    background-color: black;
+    height: .6px;
+}
+
+.footer a {
+    background:rgb(239, 131, 112);
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.footer a:hover {
+    background:rgb(193, 173, 169);
+    color: black;
+    transition: ease 4s;
 }

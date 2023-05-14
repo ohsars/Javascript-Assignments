@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🧮Calculator App ">
+    <meta name="author" content="marvelUs">
     <link rel="stylesheet" href="style.css">
-    <title>Calculator </title>
+    <title>Calculator 🧮</title>
 </head>
 <body>
     <header>
@@ -15,33 +17,32 @@
         </div>
     </header>
     <div class="section">
-        <div class="calculatorDisplay">11223344556</div>
+        <div class="calculatorDisplay" id="numberDisplay">1</div>
         <div class="calculatorkeys">
-            <button class="item1">🗑️</button>
+            <button class="item1" onclick="alert(value)">🗑️</button>
             <button class="item2">←</button>
             <button class="item3">➗</button>
-            <button class="item4">7</button>
-            <button class="item5">8</button>
-            <button class="item6">9</button>
+            <button class="item4" id="seven" value="7">7</button>
+            <button class="item5" id="eight">8</button>
+            <button class="item6" id="nine">9</button>
             <button class="item7">❌</button>
-            <button class="item8">4</button>
-            <button class="item9">5</button>
-            <button class="item10">6</button>
+            <button class="item8" id="four">4</button>
+            <button class="item9" id="five">5</button>
+            <button class="item10" id="six">6</button>
             <button class="item11">➖</button>
-            <button class="item12">1</button>
-            <button class="item13">2</button>
-            <button class="item14">3</button>
+            <button class="item12" id="one">1</button>
+            <button class="item13" id="two">2</button>
+            <button class="item14" id="three">3</button>
             <button class="item15">➕</button>
-            <button class="item16">0</button>
+            <button class="item16" id="zero">0</button>
             <button class="item17">✔️</button>
         </div>
     </div>
 
     <section class="footer">
         <p>Designed by MarvelUs</p>
-        <div class="handles">
-            <a href="#"></a>
-        </div>
+        <hr class="hr">
+        <a href="https://marvelUs.netlify.app" target="_blank" rel="noopener">Link to Portfolio</a>
     </section>
 
     <script src="index.js"></script>
