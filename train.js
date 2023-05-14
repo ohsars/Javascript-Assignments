@@ -33,5 +33,21 @@ const Person = {
 
 // Array Methods
 const primeNumbers = [1, 2, 3, 5, 7, 11, 13, 17]
-console.log(primeNumbers.length)
-console.log(primeNumbers.join("||"))
+// console.log(primeNumbers.length)
+// console.log(primeNumbers.join("||"))
+
+
+const courses = [
+    { teacher: "Will Sentence", course: "Javascript: the hard parts"},
+    { teacher: "Sarah Terence", course: "Introduction to vue"},
+    { teacher: "MarvelUs Osas", course: "Intro to React"},
+    { teacher: "Scott Moss", course: "Wahalla wahalla"}
+]
+
+// console.log(courses)
+
+courses.push({teacher: "Favour", course: "Father is great"})
+
+console.log(courses, courses.length)
+courses.unshift({teacher: "Martin", course: "Mathematics and stats"})
+console.log(courses, courses.length)
