@@ -17,23 +17,23 @@
         </div>
     </header>
     <div class="section">
-        <div class="calculatorDisplay" id="numberDisplay">1</div>
-        <div class="calculatorkeys">
-            <button class="item1" onclick="alert(value)">🗑️</button>
-            <button class="item2">←</button>
-            <button class="item3">➗</button>
+        <div class="calculatorDisplay" id="numberDisplay">Start</div>
+        <div class="calculatorkeys" id="reveal" onchange="showValue()">
+            <button class="item1">🗑️</button>
+            <button class="item2" >←</button>
+            <button class="item3" id="divide">➗</button>
             <button class="item4" id="seven" value="7">7</button>
             <button class="item5" id="eight">8</button>
             <button class="item6" id="nine">9</button>
-            <button class="item7">❌</button>
+            <button class="item7" id="multiply">❌</button>
             <button class="item8" id="four">4</button>
             <button class="item9" id="five">5</button>
             <button class="item10" id="six">6</button>
-            <button class="item11">➖</button>
+            <button class="item11" id="minus">➖</button>
             <button class="item12" id="one">1</button>
             <button class="item13" id="two">2</button>
             <button class="item14" id="three">3</button>
-            <button class="item15">➕</button>
+            <button class="item15" id="add">➕</button>
             <button class="item16" id="zero">0</button>
             <button class="item17">✔️</button>
         </div>
