@@ -5,8 +5,10 @@
     align-items: center;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(254, 247, 237);
+    background-color: rgb(233, 227, 220);
     text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /* Header Styles  */
@@ -16,14 +18,20 @@
     color: rgb(239, 131, 112);
 }
 
+.hero h1 {
+    font-size: 3rem;
+    
+}
+
 .hero p {
     color: black;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 
 /* the Calculator Section */
 .section {
+    margin-top: 1.5rem;
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -35,9 +43,9 @@
     margin: 10px;
     margin-bottom: 0;
     padding: 10px;
-    width: 200px;
-    height: 30px;
-    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
     letter-spacing: .5px;
     text-align: right;
     font-family: monospace;
@@ -47,14 +55,15 @@
 }
 
 .calculatorkeys {
-    width: 220px;
+    width: 320px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: 0;
 }
 
 .calculatorkeys button {
-    height: 45px;
+    font-size: 20px;
+    height: 55px;
     border: 1px solid gray;
     cursor: pointer;
     background-color: rgb(231, 227, 227);
@@ -79,8 +88,7 @@
 }
 
 .footer {
-    margin-top: 1.2rem;
-    font-size: 10px;
+    margin-top: 3rem;
     color: rgb(239, 131, 112);
 }
 
@@ -89,12 +97,12 @@
 }
 
 hr {
-    /* align-self: center; */
-    /* text-align: center; */
-    /* width: 200px; */
+    display: inline-flex;
+    width: 200px;
     margin: 10px;
     background-color: black;
     height: .6px;
+
 }
 
 .footer a {
