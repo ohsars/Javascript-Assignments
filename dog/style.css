@@ -32,6 +32,8 @@ button {
 #imgContainer {
   margin: 2rem 0;
   display: grid;
+  direction: ltr;
+  grid-row-start: 3;
   justify-content: center;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -82,6 +84,11 @@ hr {
     flex-direction: row;
   }
 
+  h2 {
+    font-size: 2rem;
+    
+  }
+
   #imgContainer {
     grid-template-columns: 1fr;
     background-size: contain;
@@ -97,6 +104,11 @@ hr {
     grid-template-columns: flex;
     /* flex-direction: column; */
     flex-direction: row;
+  }
+
+  h2 {
+    font-size: 3rem;
+    
   }
 
   #imgContainer {
